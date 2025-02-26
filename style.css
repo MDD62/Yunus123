@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.note-button {
+  padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.note-button[data-note="do"] { background-color: #ff6f61; } 
+.note-button[data-note="re"] { background-color: #6b5b95; } 
+.note-button[data-note="mi"] { background-color: #88b04b; } 
+.note-button[data-note="fa"] { background-color: #f7cac9; } 
+.note-button[data-note="sol"] { background-color: #92a8d1; } 
+.note-button[data-note="la"] { background-color: #955251; } 
+.note-button[data-note="si"] { background-color: #b565a7; } 
+
+.note-button:hover {
+    opacity: 0.8;
+
+}
